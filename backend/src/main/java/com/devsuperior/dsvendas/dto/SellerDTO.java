@@ -2,7 +2,7 @@ package com.devsuperior.dsvendas.dto;
 
 import java.io.Serializable;
 
-import com.devsuperior.dsvenda.entities.Seller;
+import com.devsuperior.dsvendas.entities.Seller;
 
 public class SellerDTO implements Serializable{
 	/**

@@ -1,4 +1,6 @@
-package com.devsuperior.dsvenda.entities;
+package com.devsuperior.dsvendas.entities;
+
+import com.devsuperior.dsvendas.entities.Sale;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name= "tb_sellers")
+@Table(name = "tb_sellers")
 public class Seller {
 	
 	@Id
@@ -29,6 +31,8 @@ public class Seller {
 		this.id = id;
 		this.name = name;
 	}
+
+
 
 	public Long getId() {
 		return id;

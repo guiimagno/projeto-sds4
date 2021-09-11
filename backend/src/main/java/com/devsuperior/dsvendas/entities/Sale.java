@@ -1,4 +1,4 @@
-package com.devsuperior.dsvenda.entities;
+package com.devsuperior.dsvendas.entities;
 
 import java.time.LocalDate;
 
@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name= "tb_sales")
+@Table(name = "tb_sales")
 public class Sale {
 
 	@Id
@@ -23,11 +23,10 @@ public class Sale {
 	private LocalDate date;
 	
 	@ManyToOne
-	@JoinColumn(name= "seller.id")
+	@JoinColumn(name = "seller_id")
 	private Seller seller;
 	
-	public Sale() {
-		
+	public Sale() {		
 	}
 
 	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
