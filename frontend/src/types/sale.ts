@@ -5,7 +5,7 @@ export type Sale ={
     deals: number;
     amount: number;
     date: string;
-    Seller: Seller;
+    seller: Seller;
 }
 
 export type SalePage = {
